@@ -13,6 +13,7 @@
      --color-light-grey: rgba(245 244 250 / 1);
      --color-middle-grey: rgba(117 117 117 / 1);
      --color-dark-grey: rgba(47 48 58 / 1);
+     --color-icons: rgba(175 177 184 / 1);
      
      /* block models */
      --section-padding: 94px 0;
@@ -176,8 +177,14 @@ color: var(--color-blue);
      padding-top: 94px;
 }
 .col-4 li {
-    width: 270px;
+    width: 270px;     
 }
+.col-4-img {
+    padding: 25px 0;
+    background-color: rgba(245, 244, 250, 1);          
+    margin-bottom: 30px;;
+}
+
  .col-4 h3 {
      font-weight: 700;
 
@@ -190,6 +197,10 @@ color: var(--color-blue);
      line-height: 1.7;
      color: var(--color-middle-grey);
      margin: var(--margin-zero);
+}
+.col-4 li svg {
+    display: block;
+   margin: auto;  
 }
 /* section h2 style and padding */
 section {
@@ -217,20 +228,22 @@ section h2 {
      text-align: center;  
 }
 
-.team ul {
+.team > ul {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
- .team li {
+ .team-box {
      background-color: var(--color-white);
      border-radius: 0 0 4px 4px;
      box-shadow: 0 2px 1px 0 
      rgba(0  0  0 / .2), 0 1px 1px 0 
      rgba(0  0  0 / .14), 0 1px 3px 0 
      rgba(0  0  0 / .12);
+     padding-bottom: 18px;
 }
+
 
 .team h3 {
     margin: var(--margin-zero);
@@ -240,9 +253,67 @@ section h2 {
 .team p {
     color: var(--color-middle-grey);
     margin: var(--margin-zero);
-    padding-bottom: 30px;
-
 }
+.team-box p {
+    margin-bottom: 16px;
+}
+.team-social-media {
+    display: flex;
+    justify-content: center;
+  gap: 10px;
+}
+
+.team-social-media ul li:hover {
+    background: var(--color-blue);
+    fill: #ffffff;
+    border-radius: 20px;
+    
+}
+.team-social-media .icon {
+    --color1: var(--color-icons);
+    border: 1px solid transparent;
+    width: 44px;
+    height: 44px;
+   padding: 12px;
+   
+ }
+
+ .team-social-media .icon:hover {
+--color1: var(--color-white);
+fill: var(--color1);
+background-color: var(--color-blue);
+
+border-radius: 50%;
+ }
+
+/* nasi klienci section */
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  
+}
+.clients-logos li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.clients-logos .icon {
+    --color1: var(--color-icons);
+    border: 1px solid var(--color-icons);
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    
+}
+.clients-logos .icon:hover{
+    --color1: var(--color-blue);
+    fill: var(--color1);
+    border: 1px solid var(--color-blue);
+}
+
 /* portfolio buttons */
 .bttn-group {
     margin: var(--margin-zero);
@@ -297,12 +368,18 @@ section h2 {
 /* footer section */
  .footer {
      background-color: var(--color-dark-grey);
-     padding: 60px 0;
+     padding: 60px 0;  
+}
+.footer .container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
 }
 /* general styles for footer list */
 .footer ul {
     margin: var(--margin-zero);
     padding: var(--padding-zero);
+
 }
  .footer ul li {
      font-size: 14px;
@@ -329,4 +406,15 @@ section h2 {
 .logo-footer:hover {
     color: var(--color-blue);
 }
- 
+.footer-social-media {
+    display: flex;
+    gap: 10px;
+}
+.join-us .icon {
+    --color1: var(--color-icons);
+    border: 1px solid var(--color-icons);
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 25%;
+}

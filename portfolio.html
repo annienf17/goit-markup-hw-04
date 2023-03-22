@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw3-Portfolio</title>
+    <title>hw4-Portfolio</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- normalize style CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize minimized css  -->
+    <link rel="stylesheet" href="css/modern-normalize.min.css">
 
     <!-- styles CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -36,17 +34,27 @@
                     <ul>
                         <li><a href="./">Agencja</a></li>
                         <li><a href="./portfolio.html">Portfolio</a></li>
-                        <li><a href="./">Kontakt</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- contact links -->
             <ul>
-                <li><a href="mailto:info@devstudio.com" title="Kontakt mailowy">info@devstudio.com</a></li>
-                <li><a href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a></li>
+                <li>
+                    <svg width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope-1"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" title="Kontakt mailowy">info@devstudio.com</a>
+                </li>
+                <li>
+                    <svg width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone-1"></use>
+                    </svg><a href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a>
+                </li>
             </ul>
         </div>
     </header>
+
 
 
     <!-- main section content of the portfolio page -->
@@ -135,8 +143,8 @@
     </main>
     <!-- footer section -->
     <footer class="footer">
-        <!-- max width of page -->
         <div class="container">
+            <!-- column 1 -->
             <ul>
                 <li>
                     <!-- logo footer -->
@@ -154,6 +162,26 @@
                     <!-- phone footer -->
                     <a href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a>
                 </li>
+            </ul>
+            <!-- column 2 -->
+            <div>
+                <h3>dolacz do nas</h3>
+
+                <svg width="44" height="44">
+                    <use href="./images/icons.svg#icon-Ellipse-1"></use>
+                </svg>
+                <svg width="44" height="44">
+                    <use href="./images/icons.svg#icon-Ellipse-2"></use>
+                </svg>
+                <svg width="44" height="44">
+                    <use href="./images/icons.svg#icon-Ellipse-3"></use>
+                </svg>
+                <svg width="44" height="44">
+                    <use href="./images/icons.svg#icon-Ellipse-4"></use>
+                </svg>
+            </div>
+
+
             </ul>
         </div>
     </footer>
