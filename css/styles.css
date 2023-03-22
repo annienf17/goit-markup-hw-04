@@ -143,6 +143,8 @@ color: var(--color-blue);
 /* front page headline */
  .headline {
      background-color: var(--color-dark-grey);
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/webstudio-top-bg.jpg);
+     background-size: cover;
      color: var(--color-white);
      height: 600px;
      text-align: center;
@@ -260,24 +262,31 @@ section h2 {
 .team-social-media {
     display: flex;
     justify-content: center;
-  gap: 10px;
+    gap: 10px;
 }
-
+.team-social-media li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--color-white);
+  display:flex;
+}
 .team-social-media .icon {
     --color1: var(--color-icons);
     fill: var(--color1);
-    background-color: var(--color-white);
-    border: 1px solid transparent;
     width: 44px;
-    height: 44px;
-   padding: 12px;  
+    height: auto;
+    display: block;
+    margin:auto;
+   
  }
-
+ .team-social-media li:hover,
  .team-social-media .icon:hover {
 --color1: var(--color-white);
 fill: var(--color1);
 background-color: var(--color-blue);
-border-radius: 50%;
+
  }
 
 /* nasi klienci section */
@@ -324,6 +333,9 @@ border-radius: 50%;
  .bttn-group-item:hover {
      background-color: var(--color-blue);
      color: var(--color-white);
+     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+     0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* projects gallery */
@@ -357,6 +369,12 @@ border-radius: 50%;
 /* projects=gallery list border */
  .projects-gallery li {
      border: 1px solid var(--color-border);
+}
+.projects-gallery-row li:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 /* footer section */
