@@ -76,6 +76,7 @@ h2 {
     display: flex;
     justify-content: space-between;  
 }
+/* logo and top menu */
 .container-left {
     display: flex;
     align-items: center;
@@ -120,6 +121,17 @@ color: var(--color-blue);
  a:active {
      color: var(--color-blue);
 }
+/* contact svg */
+
+.contact-item .icon {
+    fill: var(--color2);
+    margin-right: 10px;
+ }
+
+ .contact-item:hover {
+    --color2: var(--color-blue);
+ }
+ 
 /* buttons style */
  .button {
      border: none;
@@ -130,7 +142,7 @@ color: var(--color-blue);
      color: var(--color-text);
      cursor: pointer;
 }
-/* front page button header */
+/* front page button headline */
  .button-main {
      padding: 10px 42px;
      background-color: var(--color-blue);
@@ -265,30 +277,24 @@ section h2 {
     gap: 10px;
 }
 .team-social-media li {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  padding: 12px;
-  background-color: var(--color-white);
-  display:flex;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
 }
 .team-social-media .icon {
-    --color1: var(--color-icons);
-    fill: var(--color1);
-    width: 44px;
-    height: auto;
-    display: block;
-    margin:auto;
-   
- }
- .team-social-media li:hover,
- .team-social-media .icon:hover {
---color1: var(--color-white);
-fill: var(--color1);
-background-color: var(--color-blue);
-
+    fill: var(--color4);
  }
 
+ .team-social-media .icon:hover,
+ .team-social-media li:hover {
+    --color4: var(--color-white);
+    fill: var(--color-white);
+    background-color: var(--color-blue);
+ }
+ 
 /* nasi klienci section */
 .clients-logos {
     display: flex;
@@ -431,15 +437,19 @@ background-color: var(--color-blue);
     color: var(--color-white);
     margin-bottom: 20px;
 }
-.join-us .icon {
-    --color1: var(--color-white);
-    fill: var(--color1);
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
+.footer-social-media li {
+    display: flex;
     height: 44px;
-    padding: 12px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+.footer-social-media li{
+    --color1: var(--color-white);
+    fill: var(--color1);  
 }
-.join-us .icon:hover {
+.footer-social-media li:hover {
     background-color: var(--color-blue);
 }
