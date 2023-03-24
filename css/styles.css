@@ -122,7 +122,10 @@ color: var(--color-blue);
      color: var(--color-blue);
 }
 /* contact svg */
-
+.contact-item {
+    display: flex;
+    align-items: center;
+}
 .contact-item .icon {
     fill: var(--color2);
     margin-right: 10px;
@@ -161,8 +164,8 @@ color: var(--color-blue);
      height: 600px;
      text-align: center;
      display: flex;
-   justify-content: center;
-   align-items: center;
+     justify-content: center;
+     align-items: center;
 }
  .headline h1 {
      font-size: 44px;
